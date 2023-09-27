@@ -14,5 +14,6 @@
 # Ignore the internal Vagrant files
 **/.vagrant
 
-# Keep the .directory file
+# Other files to keep
 !.directory
+!README.md
