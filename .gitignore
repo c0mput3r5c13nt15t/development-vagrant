@@ -1,0 +1,18 @@
+# Ignore everything
+/*
+
+# Keep the .gitignore file itself
+!.gitignore
+
+# Keep the Vagrant config for the following dev environments
+!node-18
+!haskell
+
+# Ignore the actual project files
+*/projects
+
+# Ignore the internal Vagrant files
+**/.vagrant
+
+# Keep the .directory file
+!.directory

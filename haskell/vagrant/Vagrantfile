@@ -1,0 +1,16 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/focal64"
+
+  config.vm.synced_folder "../projects", "/home/vagrant/projects"
+
+  config.vm.define "haskell"
+  config.vm.provider :virtualbox do |vb|
+    vb.name = "haskell"
+  end
+  config.vm.hostname = "hasekll"
+
+  config.vm.provision "shell", inline: <<-SHELL
+    sudo apt-get update
+    sudo apt-get install haskell-platform -y
+  SHELL
+end
