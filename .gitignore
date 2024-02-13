@@ -5,7 +5,7 @@
 !.gitignore
 
 # Keep the Vagrant config for the following dev environments
-!node-18
+!node-20
 !haskell
 
 # Ignore the actual project files
