@@ -9,7 +9,8 @@
 !haskell
 
 # Ignore the actual project files
-*/projects
+*/projects/*
+!*/projects/.gitkeep
 
 # Ignore the internal Vagrant files
 **/.vagrant
