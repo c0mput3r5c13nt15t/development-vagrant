@@ -33,3 +33,7 @@ vagrant destroy # Destroy the vagrant box
 vagrant ssh # SSH into the vagrant box
 vagrant fsnotify # Notify the vagrant box about filesystem changes
 ```
+
+## Troubleshooting
+
+- Problem installing vagrant-fsnotify: `$VAGRANT_DISABLE_STRICT_DEPENDENCY_ENFORCEMENT=1 vagrant plugin install vagrant-fsnotify`
